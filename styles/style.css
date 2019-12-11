@@ -127,6 +127,10 @@ header .container .toggle-menu {
   cursor: pointer;
 }
 
+header .container .toggle-menu:hover {
+  background-color: blueviolet;
+}
+
 header .container .toggle-menu span {
   margin: 6px 0;
   width: 30px;
@@ -143,7 +147,7 @@ header .container .main-menu {
   display: none;
   position: relative;
   top: 0;
-  right: 130px;
+  right: 119px;
   opacity: 0;
   -webkit-transition: .55s;
   transition: .55s;
@@ -155,10 +159,16 @@ header .container .main-menu li {
   font-size: 18px;
 }
 
+header .container .main-menu li:first-child a {
+  border-top: 2px solid #fff;
+}
+
 header .container .main-menu li a {
   color: #fff;
   display: block;
-  padding: 8px;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-top: none;
 }
 
 header .container .main-menu li a i {
@@ -228,7 +238,7 @@ header .container a {
 }
 
 #about img {
-  width: 350px;
+  width: 300px;
 }
 
 #about h5 {
@@ -412,7 +422,7 @@ header .container a {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #835aeb81;
+  background-color: #835aebab;
   z-index: 2;
   color: #fff;
   display: -webkit-box;
