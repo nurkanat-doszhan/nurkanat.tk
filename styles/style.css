@@ -237,8 +237,17 @@ header .container a {
   padding-top: 100px;
 }
 
-#about img {
-  width: 300px;
+#about .t3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#about .t3 img {
+  height: 460px;
 }
 
 #about h5 {
