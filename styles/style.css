@@ -265,6 +265,12 @@ header .container a {
   font-family: robmed;
   color: #fff;
   padding: 16px 70px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#about button:hover {
+  background-color: #002453;
 }
 
 #process {
@@ -304,6 +310,16 @@ header .container a {
   background-color: #ccc;
   height: 255px;
   width: 265px;
+}
+
+#process .blocks .item img {
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#process .blocks .item:hover img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 #process .blocks .item:nth-child(1) {

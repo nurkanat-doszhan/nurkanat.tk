@@ -212,7 +212,10 @@ header {
         font-family: robmed;
         color: #fff;
         padding: 16px 70px;
-
+        transition: .3s;
+        &:hover {
+            background-color: #002453;
+        }
     }
 }
 #process {
@@ -234,6 +237,12 @@ header {
             background-color: #ccc;
             height: 255px;
             width: 265px;
+            img {
+                transition: .4s;
+            }
+            &:hover img {
+                transform: rotate(180deg);
+            }
             &:nth-child(1) {
                 background-color: #10c6fc;
             }
