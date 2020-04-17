@@ -56,94 +56,12 @@ header {
     padding-top: 80px;
     .container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         position: relative;
         .logo {
             img {
                 width: 220px;
             }
-        }
-        #menu-checkbox {
-            position: absolute;
-            right: 15px;
-            width: 56px;
-            height: 51px;
-            z-index: 2;
-            opacity: 0;
-            cursor: pointer;
-            &:checked ~ nav[role="navigation"] .main-menu {
-                display: block;
-                opacity: 1;
-            }
-            &:checked ~ .toggle-menu {
-                span:nth-child(1) {
-                    transform: rotate(45deg) translate(7px, 6px);
-                }
-                span:nth-child(2) {
-                    opacity: 0;
-                }
-                span:nth-child(3) {
-                    transform: rotate(-45deg) translate(6px, -6px);
-                }
-            }
-        }
-        .toggle-menu {
-            position: absolute;
-            right: 15px;
-            padding: 7px 11px;
-            border: 2px solid #fff;
-            cursor: pointer;
-            &:hover {
-                background-color: blueviolet;
-            }
-            span {
-                margin: 6px 0;
-                width: 30px;
-                height: 3px;
-                display: block;
-                background: #fff;
-                transition: transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
-                            background 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
-                            opacity 0.2s ease;
-            }
-        }
-        
-        .main-menu {
-            display: none;
-            position: relative;
-            top: 0;
-            right: 119px;
-            opacity: 0;
-            transition: .55s;
-            li {
-                width: 100%;
-                display: block;
-                font-size: 18px;
-                &:first-child a {
-                    border-top: 2px solid #fff;
-                }
-                a {
-                    color: #fff;
-                    display: block;
-                    padding: 10px;
-                    border: 2px solid #fff;
-                    border-top: none;
-                    i {
-                        font-size: 19px;
-                    }
-                    &:hover {
-                        text-decoration: none;
-                        background-color: blueviolet;
-                    }
-                }
-            }
-        }
-        
-        /*#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
-            content: attr(data-close);
-        }*/
-        a {
-            margin-right: -65px;
         }
     }
 }
